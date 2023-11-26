@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Your+Custom+Font" rel="stylesheet">
+    <!-- CSS for Hover Effects -->
+    <style>
+      .btn {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #2980b9;
+      }
+
+      .parallax-section {
+        background-image: url('your-background-image.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      /* Add styles for testimonials here */
+      #testimonials {
+        text-align: center;
+        padding: 40px;
+        background-color: #f9f9f9;
+      }
+
+      .testimonial {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .author {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Your existing HTML code here -->
+    <!-- Add custom fonts to your text elements -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" class="img1" alt="Abishek profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abishek MRP</h1>
+        <p class="section__text__p2">Bachelor of Engineering</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Scrolling Section -->
+    <div class="parallax-section"></div>
+
+    <!-- About Section with Testimonials -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <!-- Testimonials -->
+      <div id="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+          <p>"I was amazed by Abishek's design skills. Truly top-notch work!"</p>
+          <p class="author">John Doe, CEO</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+      <!-- Rest of your About section content -->
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <!-- Experience content here -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <!-- Projects content here -->
+    </section>
+
+    <!-- Contact Section with Contact Form -->
+    <section id="contact">
+      <!-- Contact form content here -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Footer content here -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
